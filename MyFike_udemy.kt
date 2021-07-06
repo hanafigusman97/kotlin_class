@@ -4,6 +4,8 @@ const val myName: String = "Hanafi A Gusman"
 
 fun main(args: Array<String>) {
     println("Aritmathic")
+
+    // hahahahahahahaha
     val muslimAmen: String = "aamiin"
     val christianiAmen : String = "Ameen"
 
