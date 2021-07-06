@@ -6,6 +6,7 @@ fun main(args: Array<String>) {
     println("Aritmathic")
 
     // hahahahahahahaha
+    // hanafi abdullah gusman ganteng pisan kirik
     val muslimAmen: String = "aamiin"
     val christianiAmen : String = "Ameen"
 
