@@ -45,17 +45,18 @@ fun main(args: Array<String>) {
     var ten = "ten"
 
     var combine_3 = one + two + three
+    print(combine_3)
     var pairDouble1: Pair<String,String> = Pair(one, two)
     var pairDouble2: Pair<String,String> = Pair(three, four)
     var pairDouble3: Pair<String,String> = Pair(five, six)
     var pairDouble4: Pair<Int,Int> = Pair(first, second)
     var pairDouble5: Pair<Int,Int> = Pair(third, fourth)
 
-    var tripleOne : Triple<Int, Int, Int>: Triple(first: 1, second: 2, third: 3)
-    var tripletwo : Triple<Int, Int, Int>: Triple(first: 3, second: 4, third: 5)
-    var tripleThree : Triple<Int, Int, Int>: Triple(first: 6, second: 7, third: 8)
-    var tripleFour : Triple<Int, Int, Int>: Triple(first: 9 second: 10, third: 11)
-    var tripleFive : Triple<Int, Int, Int>: Triple(first: 12 second: 13, third: 14)
+    var tripleOne =  Triple(1, 2, 3)
+    var tripletwo =  Triple( 3, 4, 5)
+    var tripleThree = Triple(6,7, 8)
+    var tripleFour = Triple(9 ,10, 11)
+    var tripleFive = Triple( 12, 13, 14)
 
 
 }
