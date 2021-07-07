@@ -58,6 +58,20 @@ fun main(args: Array<String>) {
     var tripleFour = Triple(9 ,10, 11)
     var tripleFive = Triple( 12, 13, 14)
 
+    // exersice 5
+
+    var compareOne =  true
+    var compareTwo = (10 > 100)
+    var compareThree = (10 < 100)
+    var compareFour = (10 == 100)
+    var compareFive = (10 != 100)
+    var compareSix = !(100 == 200)
+    var compareSeven = !(10 < 100)
+    var compareEight = !(10 == 100)
+    var compareNine = !(10 != 100)
+    var compareTen = !(10 > 100)
+    
+
 
 }
 
