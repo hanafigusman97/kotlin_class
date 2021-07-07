@@ -53,7 +53,9 @@ fun main(args: Array<String>) {
 
     var tripleOne : Triple<Int, Int, Int>: Triple(first: 1, second: 2, third: 3)
     var tripletwo : Triple<Int, Int, Int>: Triple(first: 3, second: 4, third: 5)
-    var tripletwo : Triple<Int, Int, Int>: Triple(first: 6, second: 7, third: 8)
+    var tripleThree : Triple<Int, Int, Int>: Triple(first: 6, second: 7, third: 8)
+    var tripleFour : Triple<Int, Int, Int>: Triple(first: 9 second: 10, third: 11)
+    var tripleFive : Triple<Int, Int, Int>: Triple(first: 12 second: 13, third: 14)
 
 
 }
