@@ -20,6 +20,42 @@ fun main(args: Array<String>) {
     println(firstNumber)
 
     //exersice 4
+    var first = 1.Double()
+    var second = 2.toDouble()
+    var hird = 3.toDouble()
+    var fourth = 4.toDouble()
+    var fifth = 5.toDouble()
+    var sixth = 6.toDouble()
+    var seven = 7.toDouble()
+    var eight = 8.toDouble()
+    var ninth = 9.toDouble()
+    var tenth = 10.toDouble()
+    // example output
+    println(first)
+
+    var one = "one"
+    var two = "two"
+    var three = "three"
+    var four = "four"
+    var five = "five"
+    var six = "six"
+    var seven = "seven"
+    var eight = "eight"
+    var nine = "nine"
+    var ten = "ten"
+
+    var combine_3 = one + two + three
+    var pairDouble1: Pair<String,String> = Pair(one, two)
+    var pairDouble2: Pair<String,String> = Pair(three, four)
+    var pairDouble3: Pair<String,String> = Pair(five, six)
+    var pairDouble4: Pair<Int,Int> = Pair(first, second)
+    var pairDouble5: Pair<Int,Int> = Pair(third, fourth)
+
+    var tripleOne : Triple<Int, Int, Int>: Triple(first: 1, second: 2, third: 3)
+    var tripletwo : Triple<Int, Int, Int>: Triple(first: 3, second: 4, third: 5)
+    var tripletwo : Triple<Int, Int, Int>: Triple(first: 6, second: 7, third: 8)
+
+
 }
 
 
