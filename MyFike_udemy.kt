@@ -179,6 +179,7 @@ fun main(args: Array<String>) {
     
     // ============================================
 
+    // section 7
     var count = 0
 
     while(count < 10){
@@ -253,13 +254,42 @@ fun main(args: Array<String>) {
         
         if
     }
+
+    //---------------------------------------
     
-    
+    // section 9
+
+    var zeroToten = 0..10
+    var zeroTotwenty = 0..20
+    var zerotoThirty = 0..30
+
+    println("==============")
+    var zeroToLessten = 0 until 10
+    var zeroToLesstwenty = 0 until 20
+    var zerotoLessThirty = 0 until 30
+    print(zerotoLessThirty)
+
+    println("==============")
+    for (i in 0..10){
+        println(i)
+    }
+    for (i in 0 until 10){
+        println(i)
+    }
+    for (i in 10 downTo 1){
+        println(i)
+    }
+    for (i in 0..100 step 5){
+        println(i)
+    }
+
+    for (angka in 0..200 step 10){
+        print(angka)
+    }
+
+
 }
 
 
-    
-    
-}
 
 
