@@ -1,7 +1,7 @@
 
 fun main(args: Array<String>) {
 
-    //exersice 3
+    //section 4
     val myName: String = "Hanafi A Gusman"
     println(myName)
 
@@ -18,8 +18,8 @@ fun main(args: Array<String>) {
     firstNumber *= 2
     firstNumber %= 4
     println(firstNumber)
-
-    //exersice 4
+//----------------------------------------------------------------
+    //section 5
     var first = 1.Double()
     var second = 2.toDouble()
     var hird = 3.toDouble()
@@ -32,7 +32,7 @@ fun main(args: Array<String>) {
     var tenth = 10.toDouble()
     // example output
     println(first)
-
+//----------------------------------------------------------------
     var one = "one"
     var two = "two"
     var three = "three"
@@ -51,26 +51,97 @@ fun main(args: Array<String>) {
     var pairDouble3: Pair<String,String> = Pair(five, six)
     var pairDouble4: Pair<Int,Int> = Pair(first, second)
     var pairDouble5: Pair<Int,Int> = Pair(third, fourth)
-
+//----------------------------------------------------------------
     var tripleOne =  Triple(1, 2, 3)
     var tripletwo =  Triple( 3, 4, 5)
     var tripleThree = Triple(6,7, 8)
     var tripleFour = Triple(9 ,10, 11)
     var tripleFive = Triple( 12, 13, 14)
 
-    // exersice 5
+    // section 6
+    
+    var nilaiSatu = 10
+    var nilaiDua = 100
 
     var compareOne =  true
-    var compareTwo = (10 > 100)
-    var compareThree = (10 < 100)
-    var compareFour = (10 == 100)
-    var compareFive = (10 != 100)
-    var compareSix = !(100 == 200)
-    var compareSeven = !(10 < 100)
-    var compareEight = !(10 == 100)
-    var compareNine = !(10 != 100)
-    var compareTen = !(10 > 100)
+    var compareTwo = (nilaiSatu > nilaiDua)
+    print(compareTwo)
+    var compareThree = (nilaiSatu < nilaiDua)
+    var compareFour = (nilaiSatu == nilaiDua)
+    var compareFive = (nilaiSatu != nilaiDua)
+    print(compareFive)
+    var compareSix = !(nilaiSatu == nilaiDua)
+    var compareSeven = !(nilaiSatu < nilaiDua)
+    print(compareSeven)
+    var compareEight = !(nilaiSatu == nilaiDua)
+    var compareNine = !(nilaiSatu != nilaiDua)
+    var compareTen = !(nilaiSatu > nilaiDua)
+//----------------------------------------------------------------
+    var totalFund = 10000000
+    var pns = true
+
+    var mertuaStatus1 = (totalFund < 10000000) && (pns == false)
+    var mertuaStatus2 = (totalFund < 10000000) || (pns == false)
+    println(mertuaStatus2)
+    var mertuaStatus3 = (totalFund > 10000000) && (pns == false)
+    var mertuaStatus4 = (totalFund == 10000000) || (pns == false)
+    var mertuaStatus5 = (totalFund != 10000000) && (pns == false)
+    println(mertuaStatus5)
+    var mertuaStatus6 = (totalFund < 10000000) || (pns == true)
+    var mertuaStatus7 = (totalFund > 10000000) && (pns == true)
+    var mertuaStatus8 = (totalFund == 10000000) || (pns == true)
+    var mertuaStatus9 = (totalFund != 10000000) && (pns == true)
+    var mertuaStatus10 = (totalFund < 10000000) && (pns == true)
+    println(mertuaStatus10)
+
+//----------------------------------------------------------------
+    var namaSaya = "Hanafi"
+    var namaTemen = "Gusman"
+
+    var compareString1= namaSaya == namaSaya
+    var compareString2 = namaSaya > namaSaya // ngebandingin berdasarkan alfabet huruf pertama
+    var compareString3 = namaSaya == namaTemen
+    var compareString4 = namaSaya < namaTemen
+    var compareString5 = namaSaya != namaTemen
+    print(compareString5)
+//----------------------------------------------------------------
+    //parameter minimal
+    var pekerjaan = "PNS"
+    var gajiTunjangan = 1000000000
+    var taatIbadah = true
+
+    if(pekerjaan == "PNS" && 1200000000>gajiTunjangan){
+        println("IDAMAN MERTUA 100%")
+    }else{
+        println("coba lagi")
+    }
+
+    if(pekerjaan != "PNS" || 1200000000>gajiTunjangan){
+        println("IDAMAN MERTUA 85%")
+    }else{
+        println("coba lagi")
+    }
+
+    if(pekerjaan == "PNS" && 1200000000>gajiTunjangan && taatIbadah == true){
+        println("IDAMAN MERTUA 1000000000%")
+    }else{
+        println("coba lagi")
+    }
+
+    if(pekerjaan == "PNS" && 1200000000>gajiTunjangan || taatIbadah == false){
+        println("IDAMAN MERTUA 101%")
+    }else{
+        println("coba lagi")
+    }
+
+    if(pekerjaan != "PNS" || 1200000000>gajiTunjangan || taatIbadah == false){
+        println("IDAMAN MERTUA 50%")
+    }else{
+        println("coba lagi")
+    }    
     
+    
+
 
 
 }
