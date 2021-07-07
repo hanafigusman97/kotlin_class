@@ -206,9 +206,14 @@ fun main(args: Array<String>) {
     var count_x = 0
     var count_y = 0
 
-    while(count_x < 3){
-        println("hanafi aja")
-        count_x++
+    while(count_x < 5) {
+
+        if (count_x == 4) {
+            break
+        } else {
+            println("hanafi aja")
+            count_x++
+        }
     }
 // ===============================================
 
@@ -243,6 +248,17 @@ fun main(args: Array<String>) {
         println("hanafi aja")
         count_x++
     }while(count_x <= 3)
+    
+    while(count < 10){
+        
+        if
+    }
+    
+    
+}
+
+
+    
     
 }
 
