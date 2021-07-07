@@ -138,9 +138,44 @@ fun main(args: Array<String>) {
         println("IDAMAN MERTUA 50%")
     }else{
         println("coba lagi")
-    }    
-    
-    
+    }
+
+    println("input pekerjaan :")
+    var myPekerjaan = readLine()
+    println("input game :")
+    var myGame= readLine()
+    println("club bola favorit :")
+    var myClub= readLine()
+
+    if (myPekerjaan == "pns"){
+        println("idaman")
+    }else if (myPekerjaan == "polisi"){
+        println("idaman")
+    }else if (myPekerjaan == "tentara"){
+        println("idaman")
+    }else{
+        println("no comment")
+    }
+
+    if (myGame == "pubg"){
+        println("idaman")
+    }else if (myGame == "dota"){
+        println("idaman")
+    }else if (myGame == "dota"){
+        println("idaman")
+    }else{
+        println("no comment")
+    }
+
+    if (myClub == "mu"){
+        println("idaman")
+    }else if (myClub == "barcelona"){
+        println("idaman")
+    }else if (myClub == "real madrid"){
+        println("idaman")
+    }else{
+        println("no comment")
+    }
 
 
 
