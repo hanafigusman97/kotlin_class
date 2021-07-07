@@ -287,6 +287,109 @@ fun main(args: Array<String>) {
         print(angka)
     }
 
+    println("==============")
+    repeat(5){
+        println("hanafi ganteng")
+    }
+
+    var countless = 0
+    repeat(10){
+        countless++
+    }
+    print(countless)
+
+    repeat(10 ){
+        countless *=5
+        countless /=2
+    }
+    print(countless)
+
+//======================
+    loopingforrow@ for (row in 0 until 10){
+        println(row)
+        loopingforcolumn@ for (column in 10 downTo 0){
+            if(column == 5){
+                break
+            }else{
+                print(" ${column} ")
+            }
+        }
+
+    }
+
+    println("==============")
+
+    var umur = 16
+
+    when(umur){
+
+        16,17,18 -> println("tua")
+        else -> println("muda")
+    }
+
+    var nilai = 9
+
+    when(nilai){
+        //kasih parameter
+        in 1..5 -> println("bagus")
+        in 6..10 -> println("bagus banget")
+        else -> println("kurang")
+    }
+
+    when(umur){
+
+        16,17,18 -> println("tua tapi dapat nilai ${nilai}")
+        else -> println("muda")
+    }
+
+    when (nilai){
+
+        in 1..5 ->{
+            println("nilai tidak bagus dengan score : ")
+            print(nilai)
+        }
+        in 6..8 ->{
+            println("nilai bagus dengan score : ")
+            print(nilai)
+        }
+        in 9..10 ->{
+            println("nilai sangat bagus dengan score : ")
+            print(nilai)
+        }
+        else ->{ println("SCORE NOT FOUND")}
+    }
+
+    when (nilai){
+
+        in 1..5 ->{
+            if(nilai < 3){
+                println("nilai sangat tidak bagus dengan score : ")
+                print(nilai)
+            }else{
+                println("nilai tidak bagus dengan score : ")
+                print(nilai)
+            }
+        }
+        in 6..8 ->{
+            if(nilai < 7){
+                println("nilai biasa dengan score : ")
+                print(nilai)
+            }else{
+                println("nilai bagus dengan score : ")
+                print(nilai)
+            }
+        }
+        in 9..10 -> {
+            if (nilai == 9) {
+                println("nilai sangat bagus dengan score : ")
+                print(nilai)
+            } else {
+                println("nilai sempurna dengan score : ")
+                print(nilai)
+            }
+        }
+        else ->{ println("SCORE NOT FOUND")}
+
 
 }
 
