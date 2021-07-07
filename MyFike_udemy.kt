@@ -390,6 +390,31 @@ fun main(args: Array<String>) {
         }
         else ->{ println("SCORE NOT FOUND")}
 
+        print("============================")
+            for (raw in 0..10) {
+            when {
+                raw % 2 == 0 -> println("${raw} adalah ganjil")
+                else -> println("${raw} adalah genap")
+            }
+        }
+
+        for (x in 100 downTo 11) {
+            when {
+                x % 7 == 0 -> println("angka ${x} adalah bilangan pembagi 5")
+                x % 5 == 0 -> println("angka ${x} adalah bilangan pembagi 5")
+                x % 3 == 0 -> println("angka ${x} adalah bilangan pembagi 3")
+                x % 2 == 0 -> println("angka ${x} adalah bilangan pembagi 2")
+                else -> println("angka ${x} kemungkinan prima")
+            }
+        }
+
+            var lengthX = 10
+        when(lengthX){
+            in 0..5 ->  println("jelek")
+            in 6..10 -> println("biasa")
+            else -> println("bagus")
+        }
+
 
 }
 
