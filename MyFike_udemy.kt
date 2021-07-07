@@ -176,9 +176,74 @@ fun main(args: Array<String>) {
     }else{
         println("no comment")
     }
+    
+    // ============================================
+
+    var count = 0
+
+    while(count < 10){
+
+        if (count < 5){
+            println("hanafi ganteng" + " " + count)
+        }else{
+            println("hanafi tampan" + " " + count)
+        }
+        count++
+    }
+
+    var count_x = 0
+    var count_y = 0
+
+    while(count_x <= 3){
+        count_x++
+        println("-----------------------")
+        count_y = 0
+        while(count_y <= 5)
+            println("hanafi ganteng" + " " + count_y)
+        count_y++
+    }
+
+    var count_x = 0
+    var count_y = 0
+
+    while(count_x < 3){
+        println("hanafi aja")
+        count_x++
+    }
+// ===============================================
 
 
+    var count = 0
 
+    do{
+        if (count < 5){
+            println("hanafi ganteng" + " " + count)
+        }else{
+            println("hanafi tampan" + " " + count)
+        }
+        count++
+
+    }while(count < 10)
+    
+    var count_x = 0
+    var count_y = 0
+    
+    do{
+        count_x++
+        println("-----------------------")
+        count_y = 0
+        while(count_y <= 5)
+            println("hanafi ganteng" + " " + count_y)
+        count_y++
+    }while(count_x <= 3)
+    
+    var count_x = 0
+    
+    do{
+        println("hanafi aja")
+        count_x++
+    }while(count_x <= 3)
+    
 }
 
 
