@@ -1,6 +1,6 @@
 
 fun main(args: Array<String>) {
-    
+
     //exersice 3
     val myName: String = "Hanafi A Gusman"
     println(myName)
@@ -19,6 +19,7 @@ fun main(args: Array<String>) {
     firstNumber %= 4
     println(firstNumber)
 
+    //exersice 4
 }
 
 
