@@ -1,1 +1,1 @@
-hanafi gusman
+semua file soal digabung menjadi satu kecuali yang tidak memungkinkan berada pada satu file yang sama
