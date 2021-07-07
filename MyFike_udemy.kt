@@ -1,39 +1,23 @@
 
-const val myName: String = "Hanafi A Gusman"
-// variabel global
-
 fun main(args: Array<String>) {
-    println("Aritmathic")
+    
+    //exersice 3
+    val myName: String = "Hanafi A Gusman"
+    println(myName)
 
-    // hahahahahahahaha
-    // hanafi abdullah gusman ganteng
-    val muslimAmen: String = "aamiin"
-    val christianiAmen : String = "Ameen"
+    var firstNumber: Int = 5
+    var SecondNumber: Int = 5
+    println((firstNumber + SecondNumber)/2) // average without list
 
-    var duetAmin = "kalau ditambah jadi ${muslimAmen} dan ${christianiAmen} and all fucking same"
-    println(duetAmin)
-
-    var hanafi = Pair("hanafi", 2)
-    //var gg: Pair<String,Int> = Pair("hanafi")
-
-    //println(hanafi.first + " and " + hanafi.second)
-
-
-    var hanafiGusman: String = """
-        
-            HANAFI ABDULLAH GUSMAN ${muslimAmen}
-        
-        """
-
-    println(hanafiGusman)
-
-
-    if (muslimAmen == "aamiin"){
-        print("dia muslim")
-    }else{
-        print("dia kristen")
-    }
-
+    firstNumber += 2
+    firstNumber -= 10
+    firstNumber *= 9
+    firstNumber /= 4
+    firstNumber %= 3
+    firstNumber += 1
+    firstNumber *= 2
+    firstNumber %= 4
+    println(firstNumber)
 
 }
 
