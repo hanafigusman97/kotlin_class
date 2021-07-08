@@ -309,7 +309,7 @@ fun main(args: Array<String>) {
         println(row)
         loopingforcolumn@ for (column in 10 downTo 0){
             if(column == 5){
-                break
+                break@loopingforrow
             }else{
                 print(" ${column} ")
             }
@@ -359,22 +359,22 @@ fun main(args: Array<String>) {
         else ->{ println("SCORE NOT FOUND")}
     }
 
-    when (nilai){
+    when (nilai) {
 
-        in 1..5 ->{
-            if(nilai < 3){
+        in 1..5 -> {
+            if (nilai < 3) {
                 println("nilai sangat tidak bagus dengan score : ")
                 print(nilai)
-            }else{
+            } else {
                 println("nilai tidak bagus dengan score : ")
                 print(nilai)
             }
         }
-        in 6..8 ->{
-            if(nilai < 7){
+        in 6..8 -> {
+            if (nilai < 7) {
                 println("nilai biasa dengan score : ")
                 print(nilai)
-            }else{
+            } else {
                 println("nilai bagus dengan score : ")
                 print(nilai)
             }
@@ -388,7 +388,9 @@ fun main(args: Array<String>) {
                 print(nilai)
             }
         }
-        else ->{ println("SCORE NOT FOUND")}
+        else -> {
+            println("SCORE NOT FOUND")
+        }
 
         print("============================")
             for (raw in 0..10) {
@@ -409,11 +411,92 @@ fun main(args: Array<String>) {
         }
 
             var lengthX = 10
-        when(lengthX){
-            in 0..5 ->  println("jelek")
+        when (lengthX) {
+            in 0..5 -> println("jelek")
             in 6..10 -> println("biasa")
             else -> println("bagus")
         }
+
+//================================================
+            // section 10
+            var nama = "Hanafi Abdullah Gusman"
+            var umur = 17
+            var angka = 29
+            var pendapatan = 9 //dalam juta aamiin
+            var errorRespond = "406"
+            var successRespond = "200"
+
+        fun printNama() {
+
+            println("nama saya Hanafi")
+        }
+
+            fun printErrorEx() {
+
+            println("KODE 404 ERROR")
+        }
+
+
+        fun printVariable() {
+
+            println("nama ${nama} dan umur ${umur} tahun")
+        }
+
+            fun printNama(nama : String) {
+            println(nama)
+        }
+
+        fun printRespond(x: String) {
+            println("API respond ${x}")
+        }
+
+            var apiRespond = "406"
+
+        fun conditionalRespond(x: String) {
+            if (apiRespond == errorRespond) {
+                println("${printRespond(x)} gagal masuk API")
+            } else {
+                println("${printRespond(x)} berhasil masuk API")
+            }
+        }
+
+            fun rumuslingkaran(jarijari: Int) Int {
+            var luasLingkaran = 22.7 * jarijari * jarijari
+
+            return luasLingkaran
+        }
+
+        fun valueNama(x: String): String {
+            var nama = x
+            return nama
+        }
+
+    }
+        fun valueNamalengkap(x : String, y: String): String{
+            var nama = valueNama(x) + " " + y
+            return nama
+         }
+
+        fun volumePersegi(rumusPersegi:(Int) -> Int, sisi: Int, luas : Int): Int {
+            var volumepersegi = rumusPersegi(luas) * sisi
+            return volumepersegi
+      }
+
+        fun fullName(printNama: (String) -> String ,x : String, y : String): String{
+            var namaPanjang = printNama(x) + " " + y
+            return namaPanjang
+         }
+
+        fun devideTwo(simpleFunction: (Int, Int) -> Int, x: Int, y:Int, z: Int): Int{
+        var result = simpleFunction(x,y) / z
+        return result
+        }
+
+
+
+}
+
+
 
 
 }
