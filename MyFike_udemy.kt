@@ -492,8 +492,93 @@ fun main(args: Array<String>) {
         return result
         }
 
+    //======================
+    // section 8
+
+    var arrayOfAsean : Array<String> = arrayOf("indonesia", "Malaysia", "Singapore", "Brunei", "Myanmar", "philiphina")
+    var arrayOfAsia : Array<String> = arrayOf("China", "Japan", "Iran", "Australia", "Russia", "Iraq")
+    var arrayOfeuropa : Array<String> = arrayOf("Jerman", "UK", "Italia", "Prancis", "Belanda", "Spanyol")
+
+    var arrayOfnum1 : Array<Int> = arrayOf(1,2,3,4,5,6,7,8,9)
+    var arrayOfnum2 : Array<Int> = arrayOf(10,11,12,13,14,15,16,17)
+    var arrayOfnum3 : Array<Int> = arrayOf(18,19,20,21,22,23,24,25,26,27)
+
+    var listEmpty: List<String> = mutableListOf()
+    var arrayListEmpty: ArrayList<Int> = arrayListOf()
+    listEmpty += ("hanafigusman")
+    listEmpty += ("hanafigusman")
 
 
+    var arrayOfAsean : Array<String> = arrayOf("indonesia", "Malaysia", "Singapore", "Brunei", "Myanmar", "philiphina")
+    var listOfAsean : ArrayList<String> = arrayListOf("indonesia", "Malaysia", "Singapore", "Brunei", "Myanmar", "philiphina")
+    var arrayOfAsia : Array<String> = arrayOf("China", "Japan", "Iran", "Australia", "Russia", "Iraq")
+    var arrayOfeuropa : Array<String> = arrayOf("Jerman", "UK", "Italia", "Prancis", "Belanda", "Spanyol")
+
+    var arrayOfnum1 : Array<Int> = arrayOf(1,2,3,4,5,6,7,8,9)
+    var arrayOfnum2 : Array<Int> = arrayOf(10,11,12,13,14,15,16,17)
+    var arrayOfnum3 : Array<Int> = arrayOf(18,19,20,21,22,23,24,25,26,27)
+
+    var toIntArray = arrayOf(18,19,20,21,22,23,24,25,26,27).toString()
+
+    var doubleList : List<Double> = listOf(1.0, 2.0 ,3.0, 4.0)
+    var doubleList1 : List<Double> = listOf(5.0, 6.0 ,7.0, 8.0)
+    var doubleList2 : List<Double> = listOf(9.0, 10.0 ,11.0, 12.0)
+
+    var listofAsia: List<String> = mutableListOf()
+    var listofAsean: List<String?> = mutableListOf()
+    var listofAfrica: List<String>? = mutableListOf()
+
+
+    println(doubleList.getOrNull(9))
+
+    println(doubleList.size)
+    println(doubleList.isEmpty())
+    println(arrayOfeuropa.maxOrNull())
+    println(arrayOfAsean.minOrNull())
+
+    println(arrayOfeuropa.get(0))
+    println(arrayOfAsia[0])
+
+    println(doubleList.slice(1..3))
+//    println(doubleList2.slice(1..4))
+
+    if("america" !in arrayOfAsean){
+        println("america tidak ada di ASEAN")
+    }else{
+        println("sebaliknya")
+    }
+
+    checkCountry("america",arrayOfAsean)
+
+
+    if ("Timor Leste" !in listOfAsean){
+        listOfAsean.add("Timor Leste")
+    }
+    listOfAsean.add(4,"laos")
+    if ("Malaysia" in listOfAsean){
+        listOfAsean.remove("Malaysia")
+    }
+
+    for (country in listOfAsean){
+
+        print(country + " * ")
+    }
+
+    printaAllList(arrayOfeuropa)
+}
+
+fun checkCountry(country: String, listCountry: Array<String>){
+    if (country in listCountry){
+        println("${country} ada di ASEAN")
+    }else{
+        println("sebaliknya")
+    }
+}
+
+fun printaAllList(listCountry: Array<String>){
+    for (country in listCountry){
+        print(" ${country}")
+    }
 }
 
 
