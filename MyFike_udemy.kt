@@ -584,53 +584,54 @@ fun printaAllList(listCountry: Array<String>){
 //==================================
 //section 11
 
-var indexNilai = mapOf('A' to "excellent", 'b' to "very good", 'c' to "good", 'd' to "bad")
-var peoplePower: Map<String,Int>  = mapOf("Thinking" to 100, "writting" to 90, "feeling" to 95, "excecute" to 97)
-var countryIndex = mapOf("INA" to "Indonesia", "MYS" to "Malaysia", "SIG" to "Singapore")
-var funcMath : Map<String, Double> = mapOf("lingkaran" to 3.14, "persegi" to 4.0, "segitiga" to 0.25)
-var handPhoneIndex = mapOf("sg" to "samsung","ap" to "apple", "op" to "oppo" )
+    var indexNilai = mapOf('A' to "excellent", 'b' to "very good", 'c' to "good", 'd' to "bad")
+    var peoplePower: Map<String,Int>  = mapOf("Thinking" to 100, "writting" to 90, "feeling" to 95, "excecute" to 97)
+    var countryIndex = mapOf("INA" to "Indonesia", "MYS" to "Malaysia", "SIG" to "Singapore")
+    var funcMath : Map<String, Double> = mapOf("lingkaran" to 3.14, "persegi" to 4.0, "segitiga" to 0.25)
+    var handPhoneIndex = mapOf("sg" to "samsung","ap" to "apple", "op" to "oppo" )
 
-println(indexNilai['A'])
-println(funcMath.get("lingkaran"))
-println(handPhoneIndex["hw"])
+    println(indexNilai['A'])
+    println(funcMath.get("lingkaran"))
+    println(handPhoneIndex["hw"])
 
-println(funcMath.isEmpty())
-println(peoplePower.size)
+    println(funcMath.isEmpty())
+    println(peoplePower.size)
 
-var indexNilaiMut = mutableMapOf('A' to "excellent", 'b' to "very good", 'c' to "good", 'd' to "bad")
-var peoplePowerMut: Map<String,Int>  = mutableMapOf("Thinking" to 100, "writting" to 90, "feeling" to 95, "excecute" to 97)
-var countryIndexMut = mutableMapOf("INA" to "Indonesia", "MYS" to "Malaysia", "SIG" to "Singapore")
-var funcMathMut : Map<String, Double> = mutableMapOf("lingkaran" to 3.14, "persegi" to 4.0, "segitiga" to 0.25)
-var handPhoneIndexMut = mutableMapOf("sg" to "samsung","ap" to "apple", "op" to "oppo" )
+    var indexNilaiMut = mutableMapOf('A' to "excellent", 'b' to "very good", 'c' to "good", 'd' to "bad")
+    var peoplePowerMut: Map<String,Int>  = mutableMapOf("Thinking" to 100, "writting" to 90, "feeling" to 95, "excecute" to 97)
+    var countryIndexMut = mutableMapOf("INA" to "Indonesia", "MYS" to "Malaysia", "SIG" to "Singapore")
+    var funcMathMut : Map<String, Double> = mutableMapOf("lingkaran" to 3.14, "persegi" to 4.0, "segitiga" to 0.25)
+    var handPhoneIndexMut = mutableMapOf("sg" to "samsung","ap" to "apple", "op" to "oppo" )
 
-indexNilaiMut['E'] = "So Bad"
-indexNilaiMut.put('F', "Not Found")
-print(indexNilaiMut)
-indexNilaiMut['E'] = "Too Bad"
-indexNilaiMut.remove('F')
-indexNilaiMut['E'] = "So Bad"
+    indexNilaiMut['E'] = "So Bad"
+    indexNilaiMut.put('F', "Not Found")
+    print(indexNilaiMut)
+    indexNilaiMut['E'] = "Too Bad"
+    indexNilaiMut.remove('F')
+    indexNilaiMut['E'] = "So Bad"
 
-for ((countryCode, NameCountry) in countryIndexMut){
-    println("${countryCode} and ${NameCountry}")
-}
-iterateAllMaps(handPhoneIndexMut)
+    for ((countryCode, NameCountry) in countryIndexMut){
+        println("${countryCode} and ${NameCountry}")
+    }
+    iterateAllMaps(handPhoneIndexMut)
 
-for (peopleKey in peoplePower.keys){
-    println("${peopleKey}")
-}
-
-for (funcValue in funcMathMut.values){
-    println("${funcValue}")
-}
-}
-
-fun iterateAllMaps(listMaps : Map<String, String>){
-    for ((x,y) in listMaps){
-        println(x + y)
+    for (peopleKey in peoplePower.keys){
+        println("${peopleKey}")
     }
 
-    
+    for (funcValue in funcMathMut.values){
+        println("${funcValue}")
+    }
+    }
 
+    fun iterateAllMaps(listMaps : Map<String, String>){
+        for ((x,y) in listMaps){
+            println(x + y)
+        }
+
+        var setOfAsean = setOf(*arrayOfAsean)
+        var setOfAsia = setOf(*arrayOfAsia)
+        var setOfEuropa = setOf(*arrayOfEuropa)
 
 }
 
