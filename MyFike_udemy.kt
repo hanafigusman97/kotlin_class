@@ -624,14 +624,82 @@ fun printaAllList(listCountry: Array<String>){
     }
     }
 
-    fun iterateAllMaps(listMaps : Map<String, String>){
-        for ((x,y) in listMaps){
+    fun iterateAllMaps(listMaps : Map<String, String>) {
+        for ((x, y) in listMaps) {
             println(x + y)
         }
+    }
 
-        var setOfAsean = setOf(*arrayOfAsean)
-        var setOfAsia = setOf(*arrayOfAsia)
-        var setOfEuropa = setOf(*arrayOfEuropa)
+    var setOfAsean = setOf(*arrayOfAsean)
+    var setOfAsia = setOf(*arrayOfAsia)
+    var setOfEuropa = setOf(*arrayOfEuropa)
+
+//=======================================
+// section 12
+
+    var expressName : (String) ->String
+
+    expressName = {nama: String -> String
+
+        "my name is ${nama}"
+
+    }
+
+    println(expressName("hanafi"))
+
+    var countNumber : (Int, Int) ->Int
+
+    countNumber = {number_1: Int, number_2: Int -> Int
+
+        number_1 + number_2
+
+    }
+
+    println(countNumber(1,2))
+
+    countNumber = {number_1: Int, number_2: Int -> Int
+
+        number_1 + number_2
+
+    }
+
+    println(countNumber(1,2))
+
+    var comparisonVar : (String, String) -> String
+
+    comparisonVar = {x: String, y: String -> String
+
+        "my first name is ${x} and my last name is ${y}"
+
+    }
+
+    println(comparisonVar("hanafi","gusman"))
+
+    var devideByTwo: (Int) -> Int
+
+    devideByTwo = {number_x : Int -> Int
+
+        number_x / 2
+
+    }
+
+    println(devideByTwo(200))
+
+    var currencyAuto: (Int) -> String
+
+    currencyAuto = {num_x : Int -> String
+
+        "Rp.${num_x}.00-"
+    }
+
+    println(currencyAuto(5000))
+
+    
+
+
+
+
+
 
 }
 
