@@ -754,6 +754,61 @@ fun printaAllList(listCountry: Array<String>){
 
     println(autoName("hanafi","gusman"))
 
+    fun noValues(): () -> Int{
+        var number = 10
+        var numberDiv:() -> Int = {
+            number *= 10
+            number
+        }
+
+        return numberDiv
+    }
+
+    var noValue = noValues()
+    println(noValue())
+
+    fun autoName() : () -> String {
+        var footballName = "Bonnuci"
+        var footballVar: () -> String = {
+            footballName
+        }
+    }
+    var namePlayer = autoName()
+    println(autoName())
+
+    var PeopleName = arrayOf("hanafi", "Budi", "Wawan")
+
+    println(PeopleName.sortedWith(compareBy(
+    {
+        it.length
+    }
+    )).joinToString())
+
+    var numberFromTen = arrayListOf("Italia", "Inggris", "Spain")
+
+    println(numberFromTen.sortedWith(compareBy(
+    {
+        it.length
+    }
+
+    )))
+
+    var numberFunc = arrayListOf(1,2,3,4,5,6,7,9,10)
+
+    println(numberFunc.map{
+        it * 10
+    })
+
+    println(numberFunc.map{
+        it.toDouble()
+    }.joinToString())
+
+    println(numberFunc.fold(0, {first: Int,second: Int -> Int
+
+        first + second
+    }))
+
+
 }
 
 
