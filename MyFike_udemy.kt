@@ -729,12 +729,30 @@ fun printaAllList(listCountry: Array<String>){
 
     println(autoCurrenct(5000))
 
+    fun lambdasAutoVar(x : Int, y: Int, lambdas :(Int, Int) -> Int): Int{
+        var lambdas = lambdas(x,y)
+        return lambdas
+    }
 
+    var lambdas = {num_x : Int, num_y : Int -> Int
 
+        num_x * num_y
+    }
 
+    fun autoRename(x : String, y: String, lambdas: (String, String) -> String):String {
+        var lambdas = lambdas(x, y)
+        return lambdas
+    }
 
+    println(lambdasAutoVar(10,200, lambdas))
 
+    var autoName = {name_x :String, name_y :String -> String
 
+        "${name_x} ${name_y}"
+
+    }
+
+    println(autoName("hanafi","gusman"))
 
 }
 
