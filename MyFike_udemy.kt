@@ -694,7 +694,42 @@ fun printaAllList(listCountry: Array<String>){
 
     println(currencyAuto(5000))
 
-    
+    var partOfName: (String, String) ->String
+
+    partOfName = {name_x, name_y ->
+
+        "${name_x} is the first name and ${name_y} is last name"
+    }
+
+    println(partOfName("hanafi", "gusman"))
+
+    var modByTwo: (Int) -> Int
+
+    modByTwo = {number ->
+
+        number % 2
+    }
+
+    println(modByTwo(10))
+
+    var simpleName: (String) -> String = { "${it} is my name"}
+
+    println(simpleName("HANAFI ABDULLAH GUSMAN"))
+
+    var plusByFive: (Int) -> Int
+
+    plusByFive = { it: Int ->
+
+        it + 5
+    }
+
+    println(plusByFive(10))
+
+    var autoCurrenct: (Int) -> String = {"Rp.${it}.00.-"}
+
+    println(autoCurrenct(5000))
+
+
 
 
 
