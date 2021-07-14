@@ -739,12 +739,14 @@ fun printaAllList(listCountry: Array<String>){
         num_x * num_y
     }
 
+    println(lambdasAutoVar(10,200, lambdas)
+
     fun autoRename(x : String, y: String, lambdas: (String, String) -> String):String {
         var lambdas = lambdas(x, y)
         return lambdas
     }
 
-    println(lambdasAutoVar(10,200, lambdas))
+  )
 
     var autoName = {name_x :String, name_y :String -> String
 
@@ -808,6 +810,9 @@ fun printaAllList(listCountry: Array<String>){
         first + second
     }))
 
+//=========================================================
+// section 13
+
     class footballPlayer (var name : String, var age : Int){
 
         val playerName: String
@@ -868,7 +873,7 @@ fun printaAllList(listCountry: Array<String>){
     var manUtd = playerFootball("ronaldo", 20)
     var milanAc = playerFootball("ronaldinho", 30)
 
-    var (name) = manUtd
+
 
     data class staff (var name: String, var age: Int, var position : String){
 
@@ -878,8 +883,8 @@ fun printaAllList(listCountry: Array<String>){
 
     }
 
-
-
+    //descrutive declaration
+    var (name) = manUtd
 
 
 }
