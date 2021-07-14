@@ -808,6 +808,79 @@ fun printaAllList(listCountry: Array<String>){
         first + second
     }))
 
+    class footballPlayer (var name : String, var age : Int){
+
+        val playerName: String
+            get() = name
+        val agePlayer : Int
+            get() = age
+
+
+    }
+
+    val footballName = footballPlayer("maldini", 39)
+    println(footballName.playerName)
+    println(footballName.agePlayer)
+
+    class studentsDetail (val name : String, var age : Int, var semester: Int, var index : MutableList<Double> = mutableListOf()) {
+
+    }
+
+    var studentTelkom = studentsDetail("hanafi",20, 8)
+    studentTelkom.index.add(4.0)
+
+    println(studentTelkom.age)
+
+    class staffOfyear (name: String, age: Int, position : String){
+
+        var name = name
+        var age = age
+        var position = position
+    }
+    var bestStaff = staffOfyear("Budi",55, "CEO")
+    println(bestStaff.name)
+
+    var bestManager = bestStaff
+    println(bestStaff.position)
+
+    var ItbStudent = studentTelkom
+    println(studentTelkom.index.joinToString())
+
+    var unpadStduent = studentsDetail()
+
+    if (ItbStudent == studentTelkom){
+        println("TRUE")
+    }else{
+        println("FALSE)
+    }
+
+    if (unpadStduent == studentTelkom){
+        println("TRUE")
+    }else{
+        println("FALSE)
+    }
+
+
+    data class playerFootball(var name : String, var age : Int){
+        // data yang di assign kesimpen di class ini semua
+    }
+
+    var manUtd = playerFootball("ronaldo", 20)
+    var milanAc = playerFootball("ronaldinho", 30)
+
+    var (name) = manUtd
+
+    data class staff (var name: String, var age: Int, var position : String){
+
+    }
+
+    data class students (val name : String, var age : Int, var semester: Int, var index : MutableList<Double> = mutableListOf()) {
+
+    }
+
+
+
+
 
 }
 
