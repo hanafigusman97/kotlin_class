@@ -886,6 +886,54 @@ fun printaAllList(listCountry: Array<String>){
     //descrutive declaration
     var (name) = manUtd
 
+    var student_1: Student = Student("hanafi", 20, 8, studentDetail.STUDENTS_UNIVERSITY)
+    var student_2: Student = Student("budi", 30, 20, studentDetail.STUDENTS_UNIVERSITY)
+
+    studentDetail.addStudent(student_1)
+    studentDetail.addStudent(student_2)
+    studentDetail.printAllAnimal()
+    //=======================================================================
+    var football_1 = footBallPlayer.seeAge("Ronaldo", 37, "Juventus", 7)
+    var football_2 = footBallPlayer.seeAge("Mesi", 20, "Free Agent", 10)
+
+    footballDetail.addName(football_1)
+    footballDetail.addName(football_2)
+    footballDetail.printAllPlayer()
+    //=======================================================================
+    var projects_1 = projectData("pengembangan web", 2000.0, "PT. Jaya Makmur Abadi", 200)
+    //    projects_1.duration = projects_1.duration/30
+    var projects_2 = projectData("pembuatan IOT untuk pabrik", 10000.0, "PT. Janji jiwa", 1000)
+
+    projectsDetail.addName(projects_1)
+    projectsDetail.addName(projects_2)
+    projectsDetail.printAllProjects()
+
+    //=======================================================================
+    var people_1 = peopleNearby.nearbyStatus("Nara", 120, "XC0AAA", "")
+    var people_2 = peopleNearby.nearbyStatus("Boruto", 50000000, "XC0BAA", "")
+
+    peopleNearbyDetail.addName(people_1)
+    peopleNearbyDetail.addName(people_2)
+    peopleNearbyDetail.printAllProjects()
+    peopleNearbyDetail.removeAllPeople()
+
+    //=======================================================================
+    //companion
+    println("===========================")
+    var studentOne: StudentClass = StudentClass.editSemester("hanafi", 20, 8)
+    var studentTwo: StudentClass = StudentClass.editSemester("budi", 30, 20)
+
+    println(studentOne)
+    println(studentTwo)
+
+
+
+    var student_3 = StudentWithID.createStudent("Jason", 20, 8)
+    println(student_3.ID)
+
+    var student_4 = StudentWithID.changeStudentName("Prio", 22, 7)
+    println(student_4.name)
+
 
 }
 
