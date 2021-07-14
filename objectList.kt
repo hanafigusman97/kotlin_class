@@ -43,21 +43,21 @@ object footballDetail {
 
 object projectsDetail {
 
-        var projectsList = mutableListOf<projectData>()
+    var projectsList = mutableListOf<projectData>()
 
-        fun addName(projectData: projectData) {
-            projectsList.add(projectData) //variabel yang isinya input dari class
-        }
+    fun addName(projectData: projectData) {
+        projectsList.add(projectData) //variabel yang isinya input dari class
+    }
 
-        fun deleteName(projectData: projectData) {
-            projectsList.remove(projectData)
-        }
+    fun deleteName(projectData: projectData) {
+        projectsList.remove(projectData)
+    }
 
-        fun printAllProjects() {
-            projectsList.forEach() {
-                print(it)
-            }
+    fun printAllProjects() {
+        projectsList.forEach() {
+            print(it)
         }
+    }
 }
 
 object peopleNearbyDetail {
@@ -74,7 +74,7 @@ object peopleNearbyDetail {
 
     fun printAllProjects() {
         peopleList.forEach() {
-            print(it)
+            println(it)
         }
     }
 
