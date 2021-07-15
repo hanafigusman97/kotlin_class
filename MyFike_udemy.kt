@@ -936,6 +936,174 @@ fun printaAllList(listCountry: Array<String>){
 
 
 }
+class city (val name : String, val country : String, var population : Int, isFull: Boolean = false){
+
+    companion object{
+        var desity = 1000 //variabel dengan nilai yang ada di semua kelas
+        var countCity = 0
+    }
+    val uploadReady : String by lazy{
+        println("sucessfull Upload")
+        "upload $name"
+    }
+    var countBuilding : Int
+    var countBusiness : Int
+    var countResto : Int
+
+    init {
+        countBuilding = 0
+        countBusiness = 0
+        countResto = 0
+    }
+
+    var populationIndicator: Int
+        get(){
+            return population/countBuilding
+        }
+        set(value){
+            population = value
+        }
+
+    var newCity: Boolean by
+    Delegates.observable(false){
+            _, oldValue, newValue ->
+        if (newValue){
+            countCity++
+        }
+
+    }
+
+    var desityAmount by Delegates.observable(0)
+    {
+            _,_,newValue ->
+        if (newValue > desity){
+            println("MAXIMUM DESITY")
+            false
+        }else{
+            true
+        }
+
+    }
+}
+
+class footballPlayer(val name : String, var club : String, var apperances : Int, isActive: Boolean = true){
+
+    companion object{
+        var maxSalary = 1000
+        var countPlayer = 0
+    }
+    val uploadReady : String by lazy{
+        println("sucessfull Upload")
+        "upload $name"
+    }
+    var countBodyBuilder : Int
+
+    init {
+        countBodyBuilder = 0
+    }
+
+    var bodyConcept: Int
+        get(){
+            return apperances/countBodyBuilder
+        }
+        set(value){
+            countBodyBuilder = value
+        }
+
+    var newCity: Boolean by
+    Delegates.observable(false){
+            _, oldValue, newValue ->
+        if (newValue){
+            countPlayer++
+        }
+
+    }
+
+    var salaryAmount by Delegates.observable(0)
+    {
+            _,_,newValue ->
+        if (newValue > maxSalary){
+            println("MAXIMUM SALARY")
+            false
+        }else{
+            true
+        }
+
+    }
+
+}
+
+
+class Students (val name : String, var studied: String, var semester : Int, var score : Int){
+    companion object{
+        var yearOfStudied = 6 //variabel dengan nilai yang ada di semua kelas
+        var minScore = 2
+        var countStudent = 0
+    }
+    val uploadReady : String by lazy{
+        println("sucessfull Upload")
+        "upload $name"
+    }
+    var countCoreStudied : Int
+    var countNonCoreStudied : Int
+
+    init {
+        countCoreStudied = 30
+        countNonCoreStudied = 30
+    }
+
+    var strongIndicator: Int
+        get(){
+            return semester/(score *countCoreStudied)
+        }
+        set(value){
+            score = value
+        }
+
+    var newCity: Boolean by
+    Delegates.observable(false){
+            _, oldValue, newValue ->
+        if (newValue){
+            countStudent++
+        }
+
+    }
+
+    var studiedAmount by Delegates.observable(0)
+    {
+            _,_,newValue ->
+        if (newValue > yearOfStudied){
+            println("MAXIMUM STUDIED")
+            false
+        }else{
+            true
+        }
+
+    }
+
+    var scoreAmount by Delegates.observable(0)
+    {
+            _,_,newValue ->
+        if (newValue < minScore){
+            println("DROP OUT")
+            false
+        }else{
+            true
+        }
+
+    }
+
+
+}
+
+class people (){
+    var people : String = ""
+    var ID : String = ""
+    var jobs : String = ""
+    lateinit var hobbies: String
+
+}
+
 
 
 
