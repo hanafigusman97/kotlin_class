@@ -1104,6 +1104,20 @@ class people (){
 
 }
 
+var people_1 = employee("hanafi", 23, "male")
+var employee_1 = Officer("hanafi", 23, "male")
+
+people_1 = employee_1
+
+println(people_1 is employee)
+println((people_1 as? employee)?.agePrint)
+
+println(employee_1.setProfflingDetail())
+
+
+var player_1 = player("hanafi", 20, "man",90).soccerPlayer(10)
+
+print(player_1)
 
 
 
