@@ -243,3 +243,49 @@ fun peopleList.Companion.outputAge(cName :String , cAge : String) :String{
 
     return "$cName dengan umur $cAge"
 }
+
+open class Officer(name: String, age: Int, gender : String): employee(name, age, gender){
+
+    override fun setProfflingDetail() {
+        super.setProfflingDetail()
+        print("Officer detail")
+    }
+
+}
+
+class worker(name: String, age: Int, gender : String): Officer(name, age, gender){
+
+}
+
+sealed class footballPlayer {
+
+    class attack(val attackPower: Int) : footballPlayer()
+    class defense(val defensePower: Int) : footballPlayer()
+
+    val myAttack = attack(100)
+    val myDefense = defense(100)
+
+    fun footballAbility(footballPlayer: footballPlayer): Int {
+        return when (footballPlayer) {
+            is footballPlayer.attack -> footballPlayer.attackPower
+            is footballPlayer.defense -> footballPlayer.defensePower
+
+        }
+    }
+
+}
+
+sealed class BODClass {
+
+    class salary(val salary: Int) : BODClass()
+    class bonusSalary(val bonusSalary: Int) : BODClass()
+
+
+    fun footballAbility(BODClass : BODClass): Int {
+        return when (BODClass) {
+            is BODClass.salary -> BODClass.salary
+            is BODClass.bonusSalary -> BODClass.bonusSalary
+
+        }
+    }
+}
