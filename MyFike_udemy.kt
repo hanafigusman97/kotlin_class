@@ -1119,6 +1119,108 @@ var player_1 = player("hanafi", 20, "man",90).soccerPlayer(10)
 
 print(player_1)
 
+var x = clubEmployee.values()
+println(x[1])
+for (condition in condition.values()){
+    println((condition.ordinal) + 1)
+}
+
+for (employee in clubEmployee.values()){
+    if (employee.isOrganic == true){
+        println("$employee is organic")
+    }
+    else{
+        println("$employee is non - organic")
+    }
+}
+
+for (employeestats in clubEmployee.values()){
+    when (employeestats) {
+        clubEmployee.president -> println("the role is excecutive to ${employeestats.name}")
+        clubEmployee.vice_president -> println("the role is excecutive to ${employeestats.name}")
+        clubEmployee.manager -> println("the role is excecutive to ${employeestats.name}")
+        else -> println("non excecutive role")
+
+    }
+}
+
+var player_1 = sportPlayer.footballPlayer()
+println(player_1.sportRole)
+
+enum class clubEmployee(var isOrganic: Boolean = true){
+    president(),
+    vice_president,
+    manager(false),
+    coach(false),
+    player(false);
+}
+
+
+enum class condition{
+    high,
+    middle,
+    low,
+    off; // tambah status
+
+}
+
+enum class classStatus{
+
+    isActive,
+    isPassive;
+
+}
+
+
+class playerRole(var name : String){
+    fun playerDetail(clubEmployee: clubEmployee){
+        println("in $name the role is $clubEmployee")
+    }
+}
+
+sealed class sportPlayer{
+
+    abstract var salary : Int //karena ga di assign di sportplayer jadinya buat variabel di bawah
+    abstract var height : Int
+
+
+    class footballPlayer: sportPlayer()//karena pengen keluarin output dari sealed
+    {
+        override var height: Int
+            get() = 100000
+            set(value) {}
+        override var salary: Int
+            get() = 2000
+            set(value) {}
+    }
+    class basketBallPlayer : sportPlayer(){
+
+        override var height: Int
+            get() = 5000
+            set(value) {}
+        override var salary: Int
+            get() = 5000
+            set(value) {}
+    }
+    class badmintonPlayer : sportPlayer(){
+        override var height: Int
+            get() = 5000
+            set(value) {}
+        override var salary: Int
+            get() = 5000
+            set(value) {}
+    }
+
+
+
+    val sportRole : String
+        get() = when (this){ //karena sealed itu abstrak refer ke diantara class yang ada
+            is footballPlayer-> "football player"
+            is basketBallPlayer -> "basketBallPlayer"
+            is badmintonPlayer -> "badmintonPlayer"
+        }
+}
+
 
 
 
