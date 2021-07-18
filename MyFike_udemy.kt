@@ -1219,6 +1219,152 @@ sealed class sportPlayer{
             is basketBallPlayer -> "basketBallPlayer"
             is badmintonPlayer -> "badmintonPlayer"
         }
+
+
+    val peopleName = arrayOf("hanafi", "abdullah", "gusman")
+
+    for (name in peopleName){
+        println(name)
+    }
+
+    val countryName = arrayListOf("jakarta", "singapore", "thailand")
+
+    for (name in countryName){
+        println(name)
+    }
+
+
+    interface worker{
+
+        fun employee()
+        fun officer()
+        fun manager()
+
+        val name : String
+        val age : Int
+        val address : String
+
+        val statusWorker: String
+            get() = "this is worker"
+
+    }
+
+    interface country{
+
+        fun city()
+        fun population()
+        fun desity()
+
+        val name : String
+        val age : Int
+        val address : String
+
+        val statusCountry: String
+            get() = "this is Country"
+    }
+
+    interface sportMan{
+
+        fun footballPlayer()
+        fun basketBallPlayer()
+        fun rugbyPlayer()
+
+        val name : String
+        val age : Int
+        val address : String
+
+        val statusSportsMan :  String
+            get() = "this is SportsMan"
+    }
+
+    class detailWorker : worker, country{
+
+        override val address: String
+            get() = TODO("Not yet implemented")
+
+        override val age: Int
+            get() = TODO("Not yet implemented")
+
+        override val name: String
+            get() = TODO("Not yet implemented")
+
+        override fun employee() {
+            TODO("Not yet implemented")
+        }
+
+        override fun manager() {
+            TODO("Not yet implemented")
+        }
+
+        override fun officer() {
+            TODO("Not yet implemented")
+        }
+
+        override fun city() {
+            TODO("Not yet implemented")
+        }
+
+        override fun desity() {
+            TODO("Not yet implemented")
+        }
+
+        override fun population() {
+            TODO("Not yet implemented")
+        }
+
+        override val statusCountry: String
+            get() = super.statusCountry
+    }
+
+    class detailCountry: country {
+
+        override val name: String
+            get() = TODO("Not yet implemented")
+
+        override val age: Int
+            get() = TODO("Not yet implemented")
+
+        override val address: String
+            get() = TODO("Not yet implemented")
+
+        override fun city() {
+            TODO("Not yet implemented")
+        }
+
+        override fun desity() {
+            TODO("Not yet implemented")
+        }
+
+        override fun population() {
+            TODO("Not yet implemented")
+        }
+    }
+
+    class detailSportMan : sportMan{
+
+        override val name: String
+            get() = TODO("Not yet implemented")
+
+        override val age: Int
+            get() = TODO("Not yet implemented")
+
+        override val address: String
+            get() = TODO("Not yet implemented")
+
+        override fun footballPlayer() {
+            TODO("Not yet implemented")
+        }
+
+        override fun basketBallPlayer() {
+            TODO("Not yet implemented")
+        }
+
+        override fun rugbyPlayer() {
+            TODO("Not yet implemented")
+        }
+
+
+    }
 }
 
 
